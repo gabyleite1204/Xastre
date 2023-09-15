@@ -1,0 +1,103 @@
+#!/usr/bin/env formulário.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <form action="script.php" method="POST">
+</head>
+
+<body>
+
+    <div>
+        <h1n id="titulo">Cadastro de Estágio PUC</h1>
+        <p id="subtitulo"> Formulário direcionado aos alunos das PUC's do Brasil</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" nome="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label>Seu curso está relacionado a qual área de conhecimento?</label>
+            <label>
+                <input type="radio" name="área" value="exatas"> Exatas
+            </label>
+            <label>
+                <input type="radio" name="área" value="biológicas"> Biológicas
+            </label>
+            <label>
+                <input type="radio" name="área" value="humanas"> Humanas 
+            </label>
+        </div>
+
+        <div class="campo">
+            <label>Selecione a PUC que você pertence:</label>
+            <select id="puc">
+                <option selected disabled value="">...
+                <option>PUC-Campinas</option>
+                <option>PUC-SP</option>
+                <option>PUC-Rio</option>
+                <option>PUC-Minas</option>
+                <option>PUC-Goiás</option>
+                <option>PUC-PR</option>
+                <option>PUC-RS</option>
+            </select>
+        </div>
+
+    <fieldset class="grupo">
+        <div>
+            <label>Qual semestre você está cursando?</label><br><br>
+            <input type="checkbox" id="semestre1" name="semestre1" value="1º semestre">
+            <label for="semestre1">1º semestre</label>
+            <input type="checkbox" id="semestre2" name="semestre2" value="2º semestre">
+            <label for="semestre2">2º semestre</label>
+            <input type="checkbox" id="semestre3" name="semestre3" value="3º semestre">
+            <label for="semestre3">3º semestre</label>
+            <input type="checkbox" id="semestre4" name="semestre4" value="4º semestre">
+            <label for="semestre4">4º semestre</label>
+            <input type="checkbox" id="semestre5" name="semestre5" value="5º semestre">
+            <label for="semestre5">5º semestre</label>
+            <input type="checkbox" id="semestre6" name="semestre6" value="6º semestre">
+            <label for="semestre6">6º semestre</label>
+            <input type="checkbox" id="semestre7" name="semestre7" value="7º semestre">
+            <label for="semestre7">7º semestre</label>
+            <input type="checkbox" id="semestre8" name="semestre8" value="8º semestre">
+            <label for="semestre8">8º semestre</label>
+            <input type="checkbox" id="semestre9" name="semestre9" value="9º semestre">
+            <label for="semestre9">9º semestre</label>
+            <input type="checkbox" id="semestre10" name="semestre10" value="10º semestre">
+            <label for="semestre10">10º semestre</label>
+        </div>
+    </fieldset>
+        
+
+    <button type="submit">Concluído</button>
+
+    </form>
+
+</body>
+
+</html>
