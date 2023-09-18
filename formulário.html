@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
     <title>Document</title>
     <form action="script.php" method="POST">
 </head>
@@ -12,7 +13,7 @@
 <body>
 
     <div>
-        <h1n id="titulo">Cadastro de Estágio PUC</h1>
+        <h1 id="titulo">Cadastro de Estágio PUC</h1>
         <p id="subtitulo"> Formulário direcionado aos alunos das PUC's do Brasil</p>
         <br>
     </div>
@@ -20,28 +21,28 @@
     <form>
         <fieldset class="grupo">
             <div>
-                <label for="nome">Nome</label>
+                <label for="nome"><strong>Nome</strong></label>
                 <input type="text" name="nome" id="nome" required>
             </div>
 
             <div class="campo">
-                <label for="sobrenome">Sobrenome</label>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
                 <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
 
             <div class="campo">
-                <label for="idade">Idade</label>
+                <label for="idade"><strong>Idade</strong></label>
                 <input type="number" name="idade" id="idade" required>
             </div>
 
             <div class="campo">
-                <label for="email">Email</label>
+                <label for="email"><strong>Email</strong></label>
                 <input type="email" nome="email" id="email" required>
             </div>
         </fieldset>
 
         <div class="campo">
-            <label>Seu curso está relacionado a qual área de conhecimento?</label>
+            <label><strong> O curso está relacionado a qual área de conhecimento?</strong></label>
             <label>
                 <input type="radio" name="área" value="exatas"> Exatas
             </label>
@@ -54,7 +55,7 @@
         </div>
 
         <div class="campo">
-            <label>Selecione a PUC que você pertence:</label>
+            <label for="puc"><strong> Selecione a PUC que você pertence:</strong></label>
             <select id="puc">
                 <option selected disabled value="">...
                 <option>PUC-Campinas</option>
@@ -68,8 +69,8 @@
         </div>
 
     <fieldset class="grupo">
-        <div>
-            <label>Qual semestre você está cursando?</label><br><br>
+        <div id="check">
+            <label><strong>Qual semestre você está cursando?</strong></label><br><br>
             <input type="checkbox" id="semestre1" name="semestre1" value="1º semestre">
             <label for="semestre1">1º semestre</label>
             <input type="checkbox" id="semestre2" name="semestre2" value="2º semestre">
@@ -94,7 +95,7 @@
     </fieldset>
         
 
-    <button type="submit">Concluído</button>
+    <button class="botao" type="submit">Concluído</button>
 
     </form>
 
